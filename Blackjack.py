@@ -38,7 +38,7 @@ class Deck:
         self.deck = []  # start with empty list
         for suit in suits:
             for rank in ranks:
-                # build Card objs and add to the list
+                # build Card objects and add to the list
                 self.deck.append(Card(suit, rank))
 
     def __str__(self):
