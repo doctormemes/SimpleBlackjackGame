@@ -150,13 +150,15 @@ def show_some(player, dealer):
     print("<face down card>")
     print('', dealer.cards[1])
     print("\nPlayer's Hand: ", *player.cards, sep='\n ')
+    print("\nTotal: " + str(player.value))
+
 
 
 def show_all(player, dealer):
     print("\nDealer's Hand: ", *dealer.cards, sep='\n ')
-    print("\nDealer's Hand = ", dealer.value)
     print("\nPlayer's Hand: ", *player.cards, sep='\n ')
-    print("\nPlayer's Hand = ", player.value)
+    print("Hand value: " + str(player.value))
+
 
 
 # End game scenario functions
